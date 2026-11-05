@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  background: #f5f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #0f2d2f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+  background: #1abc9c;
+  color: white;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar input {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.profile {
+  background: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.green {
+  background: #0f2d2f;
+  color: white;
+}
+
+.white {
+  background: white;
+}
+
+/* Chart */
+.chart-box {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Table */
+.table-box {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  padding: 10px;
+}
+
+.paid {
+  color: green;
+}
+
+.pending {
+  color: orange;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .cards {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100px;
+  }
+}
